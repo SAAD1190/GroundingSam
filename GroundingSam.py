@@ -46,7 +46,7 @@ def segment(sam_predictor: SamPredictor, image: np.ndarray, xyxy: np.ndarray) ->
 
 
 class GroundingSam:
-  def __init__(self, classes, images_dir = "/content/image_dir/", annotations_dir = "./annotations/", images_extensions = ['jpg', 'jpeg', 'png']):
+  def __init__(self, classes, images_dir = "./data/", annotations_dir = "./annotations/", images_extensions = ['jpg', 'jpeg', 'png']):
     self.classes = classes
     self.images_dir = images_dir
     self.annotations_dir = annotations_dir
